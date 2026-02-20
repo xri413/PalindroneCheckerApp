@@ -1,9 +1,23 @@
-// version 1.0
+// version 2.0
 //author G Chakradhar
-// useCase 1; welcome page
-public class PalindromeCheckerApp { public static void main (String[] args){
- System.out.println ("welcome to palindrome Checker App Management System");
- System.out.println("\nversion : 1.0");
- System.out.println("\nSystem initialized successfully");
-}
-}
+// useCase 2; hardcodepalindrome
+public class PalindromeCheckerApp {
+
+
+  public static void main(String[] args) {
+
+   String input = "madam";
+   boolean isPalindrome = true;
+
+   for (int i = 0; i < input.length() / 2; i++) {
+    if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+     isPalindrome = false;
+     break;
+    }
+   }
+
+   System.out.println("Input text: " + input);
+   System.out.println("Is it a Palindrome?: " + isPalindrome);
+  }
+
+ }
