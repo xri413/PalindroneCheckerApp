@@ -1,18 +1,17 @@
 # PalindroneCheckerApp
-# UC9PalindromeCheckerApp
+#  UseCase10PalindromeCheckerApp
 
 ## Description
-This Java program checks whether a string is a palindrome using recursion.
+This Java program validates a palindrome after normalizing the input string.
 
-Characters are compared from the outer positions moving inward.
-The recursion stops when:
-- All characters match, or
-- A mismatch is found.
+Normalization includes:
+- Removing spaces and symbols
+- Converting all characters to lowercase
+
+This ensures the palindrome check is logical rather than format-dependent.
 
 ## Compile
-javac UseCase9PalindromeCheckerApp.java
+javac UseCase10PalindromeCheckerApp.java
 
 ## Run
-java UseCase9PalindromeCheckerApp
-
-//uc9-added
+java UseCase10PalindromeCheckerApp
