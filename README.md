@@ -1,8 +1,8 @@
 # PalindroneCheckerApp
-# UC6
-This Java program checks whether a given string is a palindrome using:
-- **Queue (FIFO)**
-- **Stack (LIFO)**
+# UC7-DequeBasedOptimizedPalindromeChecker
+How It Works
 
-Characters are inserted into both data structures and then compared.  
-If all characters match, the string is a palindrome.
+1. Define an input string.
+2. Insert each character into a `Deque`.
+3. Continuously remove and compare characters from both ends.
+4. If all comparisons match → the string is a palindrome.
