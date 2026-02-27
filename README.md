@@ -1,8 +1,18 @@
 # PalindroneCheckerApp
-# UC7-DequeBasedOptimizedPalindromeChecker
-How It Works
+# UC9PalindromeCheckerApp
 
-1. Define an input string.
-2. Insert each character into a `Deque`.
-3. Continuously remove and compare characters from both ends.
-4. If all comparisons match → the string is a palindrome.
+## Description
+This Java program checks whether a string is a palindrome using recursion.
+
+Characters are compared from the outer positions moving inward.
+The recursion stops when:
+- All characters match, or
+- A mismatch is found.
+
+## Compile
+javac UseCase9PalindromeCheckerApp.java
+
+## Run
+java UseCase9PalindromeCheckerApp
+
+//uc9-added
