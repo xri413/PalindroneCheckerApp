@@ -1,36 +1,38 @@
+import java.util.Scanner;
+
 public class PalindromeCheckerApp {
+
+    public static boolean isPalindrome(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
 
-        String input = "madam";
+        Scanner scanner = new Scanner(System.in);
 
-        PalindromeService service = new PalindromeService();
+        System.out.print("Input : ");
+        String input = scanner.nextLine();
 
-        boolean result = service.checkPalindrome(input);
+        long startTime = System.nanoTime();
 
-        if (result) {
-            System.out.println(input + " is a palindrome.");
-        } else {
-            System.out.println(input + " is not a palindrome.");
-        }
-    }
-}
+        boolean result = isPalindrome(input);
 
-class PalindromeService {
+        long endTime = System.nanoTime();
+        long executionTime = endTime - startTime;
 
-    public boolean checkPalindrome(String input) {
+        System.out.println("Is Palindrome? : " + result);
+        System.out.println("Execution Time : " + executionTime + " ns");
 
-        int start = 0;
-        int end = input.length() - 1;
-
-        while (start < end) {
-            if (input.charAt(start) != input.charAt(end)) {
-                return false;
-            }
-            start++;
-            end--;
-        }
-
-        return true;
+        scanner.close();
     }
 }
